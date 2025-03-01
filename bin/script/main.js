@@ -50,7 +50,7 @@ function activity(taskName){
     let name = document.getElementById(taskName).innerText
     let newLi = document.createElement("div")
     newLi.textContent = `You have completed the task ${name} at ${today}`
-    newLi.classList.add("mb-4", "bg-gray-100", "rounded-[8px]", "w-[318px]", "h-[68px]", "p-[10px]")
+    newLi.classList.add("mb-4", "bg-gray-100", "rounded-[8px]", "w-[318px]", "min-h-[68px]", "p-[10px]")
     log.appendChild(newLi)
 }
 // to clean teh activity log
