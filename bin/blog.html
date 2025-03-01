@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy & Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+            color: #000;
+        }
+    </style>
+</head>
+<body id="body" class="bg-slate-300 h-screen">
+    <section class="mt-6 grid grid-cols-1 grid-rows-[20% 70%] gap-4 max-w-[1500px] mx-auto">
+        <!-- header -->
+        <header class="bg-white flex justify-between max-h-[100px] p-6 box-border rounded-2xl">
+            <div class="flex items-center justify-between">
+                <img width="51.24px" height="51.24px" src="../assets/logo.png" alt="">
+                <p class="font-light text-4xl">Div<span class="font-bold">Board</span></p>
+            </div>
+            <button id="backBtn" class="w-36 h-11 bg-blue-500 rounded-lg font-medium text-white">Back to Disk</button>
+        </header>
+        <p class="mx-auto text-4xl font-bold">Blogs</p>
+        <main>
+            <div class="bg-white p-4 rounded-xl mb-4">
+                <p class="font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</p>
+                <div class="my-3 border-dashed border-gray-200 border-b-2 w-full"></div>
+                <p class="text-wrap text-lg">To select an element, it depends mostly on the user's need. Like, let's say the user wants to specifically select ‘an’ element here, he can use a single element selector such as getElementById. If he wants to select multiple elements, then there are a lot more approaches: let’s say he wants to select an element that shares a common class, here getElementsByClassName can be used. Or getElementsByTagName can be used to select elements with the same tag name.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl mb-4">
+                <p class="font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent?</p>
+                <div class="my-3 border-dashed border-gray-200 border-b-2 w-full"></div>
+                <p class="text-wrap text-lg">innerHTML is used to change the whole structure of a selected element.
+                    innerText is used to change the text inside of a selected element.
+                    textContent works similarly to innerText, but it can also change hidden elements.
+                    </p>
+            </div>
+            <div class="bg-white p-4 rounded-xl mb-4">
+                <p class="font-bold text-xl">Question-3: What is event delegation in the DOM?</p>
+                <div class="my-3 border-dashed border-gray-200 border-b-2 w-full"></div>
+                <p class="text-wrap text-lg">It is a bubbling technique where a developer can add a single event listener to a parent element rather than adding multiple event listeners to the children.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl mb-4">
+                <p class="font-bold text-xl">Question-4: What is event bubbling in the DOM?</p>
+                <div class="my-3 border-dashed border-gray-200 border-b-2 w-full"></div>
+                <p class="text-wrap text-lg">Event bubbling refers to the HTML structure being an overly complicated network of parent and children elements, where a parent element (div, main, section, ul) can have multiple children (sub div, li, etc.).</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl mb-4">
+                <p class="font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <div class="my-3 border-dashed border-gray-200 border-b-2 w-full"></div>
+                <p class="text-wrap text-lg">To create an element, we use document.createElement, which instructs the HTML document to create a new element. Add function is used to add a child to a selected parent. Remove is used to remove an element from a selected parent.
+
+                </p>
+            </div>
+        </main>
+    </section>
+    <script>
+        document.getElementById("backBtn").addEventListener("click", function() {
+            window.location.assign("../index.html")
+        });
+    </script>
+</body>
+</html>
